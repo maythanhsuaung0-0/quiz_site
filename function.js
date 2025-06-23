@@ -80,4 +80,4 @@ var questionList = [new Questions("Which keyword is used to declare a variable i
 
 
 
-console.log(questionList[1].question);
+//console.log(questionList[1].question);
