@@ -1,6 +1,5 @@
 
-
-//console.log(questionList);
+//Reveal the correct answer.
 
 questionList.forEach(e => {
 
@@ -12,13 +11,12 @@ questionList.forEach(e => {
     document.querySelector("br").insertAdjacentHTML("afterend", addin);
 })
 
+//Change the status bar in the result page.
 
-
-
-//document.querySelector(".question").innerHTML = "Goodbye World";
-
-
-function checkup(){
-    let answerBoard = document.querySelector("div.answerBoard");
-    console.log(answerBoard);
+function statusBar(correct, total){
+    let correctPercentage = Math.floor((correct/total)*100);
+    document.documentElement.style.setProperty("--status-bar", `${correctPercentage}%`);
+    document.querySelector("div#statusBar div").innerHTML= `${correctPercentage}%`;
 }
+
+statusBar(50,100)

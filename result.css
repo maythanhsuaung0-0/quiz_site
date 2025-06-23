@@ -1,5 +1,9 @@
 @import url("./variables.css");
 
+:root{
+    --status-bar: 0%;
+}
+
 *{
     margin: 0;
 }
@@ -39,7 +43,7 @@ a{
 
 @keyframes status {
     from {width: 0%}
-    to {width: 70%}
+    to {width: var(--status-bar)}
 }
 
 .answerBoard{
