@@ -5,4 +5,17 @@
   --base-color: #000;
   /* purple */
   --theme-color: #410B95;
+
+  --muted-color: #2D2D2D;
+  /* spacing */
+  --width-sm: 0.5em;
+  --width-md: 1em;
+  --width-lg:2em;
+  /* fontsize */
+  --font-xs: 13px;
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-xl: 24px;
+  --font-xxl: 56px;
 }
