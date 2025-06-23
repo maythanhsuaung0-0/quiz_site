@@ -1,0 +1,1 @@
+let answerBoard = document.querySelector("div.answerBoard")
