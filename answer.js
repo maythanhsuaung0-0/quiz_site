@@ -16,8 +16,16 @@ function statusBar(correct, total){
 
 function messageBar(score){
 
-    if (score < 50){
-        document.querySelector("div#message").innerHTML = "Try Hard Next Time";
+    if (score >= 100){
+        document.querySelector("div#message").innerHTML = "Congraduation!!!";
+    }else if (score > 90){
+        document.querySelector("div#message").innerHTML = "So Close to a Perfect Grade!";
+    }else if (score > 80){
+        document.querySelector("div#message").innerHTML = "Good Effort!";
+    }else if (score > 70){
+        document.querySelector("div#message").innerHTML = "Try a Bit Harder Next Time.";
+    }else {
+        document.querySelector("div#message").innerHTML = "You can do better!";
     }
 }
 
