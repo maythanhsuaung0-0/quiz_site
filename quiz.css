@@ -1,0 +1,156 @@
+@import url('./variables.css');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+html,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--theme-color);
+  font-family: "Inter", sans-serif;
+}
+
+.question-card,
+.questions-list {
+  display: grid;
+
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.back{
+ margin:var(--width-lg) 0 5em;
+ background-color: rgba(255,255,255,0.3);
+ padding: var(--width-md);
+ width: fit-content;
+ height: fit-content;
+ border-radius: var(--width-sm);
+}
+.icon{
+  width: 1.5em;
+  height: 1.5em;
+}
+.h3 {
+  font-weight: 500;
+  font-size: var(--font-md);
+}
+
+.transparent-card {
+  width: fit-content;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--width-md);
+  justify-self: center;
+  align-self: center;
+}
+
+.question-card {
+  background-color: var(--root-color);
+  height: fit-content;
+  width: 30em;
+  box-sizing: border-box;
+  padding: 1.5em;
+  border-radius: 1em;
+  gap: var(--width-md);
+}
+
+.questions-list {
+  gap: var(--width-sm);
+}
+
+.button,.radio-card {
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
+}
+.radio-card{
+position: relative;
+}
+.question{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  background-color: var(--success-color);
+  justify-self: center;
+  width: 10em;
+  box-sizing: border-box;
+  color: var(--root-color);
+  cursor: pointer;
+}
+.wrong{
+ 
+  border: 1px solid var(--error-color);
+  color: var(--error-color);
+  background-color:  rgba(255,52,30,0.3);
+}
+.correct{
+ border:1px solid var(--success-color);
+ color: var(--success-color);
+ background-color: rgba(61,139,20,0.3);
+}
+.track{
+ font-size: var(--font-lg);
+ color: var(--root-color);
+ text-align: center;
+ margin-bottom: 1em;
+}
+.none{
+ display: none;
+}
+.block{
+display: block;
+}
+.btns{
+ display: flex;
+ gap: var(--width-md);
+}
+.shake{
+ animation: shake 0.5s;
+ animation-iteration-count: 2;
+}
+.normal{
+ animation: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@media screen and (max-width:768px) {
+  .back{
+padding: .5em;
+margin-bottom: 3em;
+  }
+ .container {
+  width: 90%;
+}
+.question-card{
+ width: 20em;
+} 
+
+}
