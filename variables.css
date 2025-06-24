@@ -7,6 +7,8 @@
   --theme-color: #410B95;
 
   --muted-color: #2D2D2D;
+  --success-color:#3D8B14;
+  --error-color:#E1341E;
   /* spacing */
   --width-sm: 0.5em;
   --width-md: 1em;

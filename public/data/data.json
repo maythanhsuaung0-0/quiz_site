@@ -1,100 +1,135 @@
 {"javascript":[
   {
+    "id":1,
     "question": "Which keyword is used to declare a variable in JavaScript?",
     "choices": ["var", "define", "int", "dim"],
     "answer": "var"
   },
   {
+    
+    "id":2,
     "question": "What does `===` mean in JavaScript?",
     "choices": ["Assignment", "Equals", "Strict equality", "Type casting"],
     "answer": "Strict equality"
   },
   {
+        "id":3,
     "question": "How do you write a comment in JavaScript?",
     "choices": ["# This is a comment", "// This is a comment", "<!-- This is a comment -->", "** This is a comment"],
     "answer": "// This is a comment"
   },
   {
+    "id":4,
     "question": "Which method converts JSON to a JavaScript object?",
     "choices": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.toObject()"],
     "answer": "JSON.parse()"
   },
   {
+    "id":5,
     "question": "Which of the following is not a JavaScript data type?",
     "choices": ["Number", "String", "Boolean", "Character"],
     "answer": "Character"
   },
   {
+    "id":6,
     "question": "How do you create a function in JavaScript?",
     "choices": ["function = myFunction()", "function:myFunction()", "function myFunction()", "create function myFunction()"],
     "answer": "function myFunction()"
   },
   {
+    "id":7,
     "question": "What will `typeof null` return?",
     "choices": ["'null'", "'object'", "'undefined'", "'boolean'"],
     "answer": "'object'"
   },
   {
+
+    "id":8,
     "question": "Which of the following is used to define an arrow function?",
     "choices": ["=>", "<=", "-->", "==>"],
     "answer": "=>"
   },
   {
+    
+    "id":9,
     "question": "What is the output of `Boolean(0)`?",
     "choices": ["true", "false", "undefined", "NaN"],
     "answer": "false"
   },
   {
+
+    "id":10,
     "question": "Which array method removes the last element from an array?",
     "choices": ["pop()", "shift()", "unshift()", "splice()"],
     "answer": "pop()"
   },
   {
+
+    "id":11,
     "question": "What does the `addEventListener()` method do?",
     "choices": ["Adds two numbers", "Registers an event handler", "Creates a DOM element", "Submits a form"],
     "answer": "Registers an event handler"
   },
   {
+
+    "id":12,
     "question": "What is the purpose of `use strict`?",
     "choices": ["Disables modern features", "Enables modern JavaScript", "Runs code in strict mode", "Disables errors"],
     "answer": "Runs code in strict mode"
   },
   {
+
+    "id":13,
     "question": "How can you convert a string to an integer in JavaScript?",
+
     "choices": ["parseInt()", "int()", "toInteger()", "Number.parse()"],
     "answer": "parseInt()"
   },
   {
+
+    "id":14,
     "question": "Which object represents the browser window in JavaScript?",
     "choices": ["document", "screen", "window", "navigator"],
     "answer": "window"
   },
   {
+
+    "id":15,
     "question": "Which operator is used for exponentiation in JavaScript?",
     "choices": ["^", "**", "exp", "^^"],
     "answer": "**"
   },
   {
+
+    "id":16,
     "question": "What is the default value of an uninitialized variable?",
     "choices": ["null", "undefined", "0", "NaN"],
     "answer": "undefined"
   },
   {
+
+    "id":17,
     "question": "Which keyword is used to define a constant in JavaScript?",
     "choices": ["var", "let", "const", "define"],
     "answer": "const"
   },
   {
+
+    "id":18,
     "question": "What does `Array.isArray([])` return?",
     "choices": ["true", "false", "null", "undefined"],
     "answer": "true"
   },
   {
+
+    "id":19,
     "question": "Which method can be used to join array elements into a single string?",
     "choices": ["concat()", "split()", "join()", "merge()"],
     "answer": "join()"
   },
   {
+
+    "id":20,
     "question": "How do you write an if statement in JavaScript?",
     "choices": ["if x > y then", "if (x > y)", "if x > y:", "if x > y {}"],
     "answer": "if (x > y)"
