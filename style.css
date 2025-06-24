@@ -1,0 +1,33 @@
+#title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 25%;
+    bottom: 50%;
+
+}
+.header_part2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 45%;
+    bottom: 50%;
+
+}
+
+#background-gradient{
+    border-style:none;
+    display: flex;
+    padding: 75%;
+    background-image: linear-gradient(white, purple);
+}
+#header_input{
+    font-size: 10em;
+    
+    
+}
+.button{
+    padding: 25px;
+    font-weight: bold;
+    font-size: 25px;
+}
