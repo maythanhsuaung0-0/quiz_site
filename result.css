@@ -39,6 +39,11 @@ a{
     animation-name: status;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    color: black;
+}
+
+#message{
+    
 }
 
 @keyframes status {
