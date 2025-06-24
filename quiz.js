@@ -85,6 +85,12 @@ function loadQuestion(question, questions, questionNo) {
     radio.addEventListener('change', function() {
       if (choices_list.dataset.checked == "true") {
         console.log("answers can't be changed")
+        div.classList.add("shake")
+        setTimeout(
+          () => {
+            div.classList.remove("shake")
+          }, 300
+        )
       }
       else {
         choices_list.dataset.checked = "true"
@@ -105,7 +111,7 @@ function loadQuestion(question, questions, questionNo) {
 // call all the functions
 useData()
 back.addEventListener("click", function() {
-  console.log("now",answered.length)
+  console.log("now", answered.length)
   if (answered.length > 0) {
     let quit = confirm("Are you sure you want to leave the progress? You will lose the current record")
     console.log('quit', quit)
