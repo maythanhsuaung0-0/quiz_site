@@ -5,6 +5,7 @@ let question = document.querySelector(".question-card h3")
 let button = document.querySelector(".next")
 let submitButton = document.querySelector(".submit")
 let prevButton = document.querySelector(".prev")
+let back = document.querySelector(".back")
 let answered = []
 let index = 0
 let isAnswered = false
@@ -14,6 +15,7 @@ async function fetchData() {
   return data
 
 }
+
 async function useData() {
   let q_and_a = await fetchData()
   let questions = q_and_a.javascript
@@ -102,3 +104,21 @@ function loadQuestion(question, questions, questionNo) {
 }
 // call all the functions
 useData()
+back.addEventListener("click", function() {
+  console.log("now",answered.length)
+  if (answered.length > 0) {
+    let quit = confirm("Are you sure you want to leave the progress? You will lose the current record")
+    console.log('quit', quit)
+    if (quit) {
+      sessionStorage.clear()
+      window.location.href = "/index.html"
+    }
+  }
+  else {
+    sessionStorage.clear()
+    window.location.href = "/index.html"
+
+  }
+
+
+})
