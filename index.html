@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>20 Question Quiz</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="background-gradient"></div>
-        <div id="title" style="font-weight: bold; font-size: 5em;"> <h3>20 Question Quiz</h3></div>
+  <head>
+    <title>20 Question Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="background-gradient"></div>
+    <div id="title" style="font-weight: bold; font-size: 5em">
+      <h3>20 Question Quiz</h3>
+    </div>
 
-      <div class="header_part2">
-        <div class="header_input">
-          <button class="button">Start Quiz</button>
-        </div>
-        <div id =""> 
-            <div> </div>
-        </div>
-        
+    <div class="header_part2">
+      <div class="header_input">
+        <button class="button" id="startQuizButton">
+          Start Quiz
+        </button>
       </div>
+      <div id="">
+        <div></div>
+      </div>
+    </div>
+        <div id="quizModal" class="modal">
+      <div class="modal-content">
+        <h3>Ready to Start the Quiz?</h3>
+        <p>This quiz contains 20 questions. You'll have one chance to answer each question.</p>
+        <div class="modal-buttons">
+          <button class="modal-button cancel" id="cancelQuiz">Cancel</button>
+          <button class="modal-button confirm" id="confirmQuiz">Start Quiz</button>
+        </div>
+      </div>
+    </div>
         
-
-    </body>
+    <script src="index.js"></script>
+  </body>
 </html>
