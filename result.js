@@ -58,11 +58,25 @@ function totalIncorrectAns(){
 totalIncorrectAns().forEach(e => {
 
     let question = e.question;
+
+    let selected = e.selected;
+
+    let answer = e.answer;
+
+    let addin = `<div class="wrongBoard"><div class="question">${question}</div><div class="selected">Your Answer: ${selected}</div><div class="answers">Correct Answer: ${answer}</div></div>`
+
+    document.querySelector("#incorrect").insertAdjacentHTML("beforeend", addin);
+
+})
+
+totalCorrectAns().forEach(e => {
+
+    let question = e.question;
     let answer = e.answer;
 
     let addin = `<div class="answerBoard"><div class="question">${question}</div><div class="answers">${answer}</div></div>`
 
-    document.querySelector("br").insertAdjacentHTML("afterend", addin);
+    document.querySelector("#correct").insertAdjacentHTML("beforeend", addin);
 
 })
 
