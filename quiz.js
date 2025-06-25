@@ -35,7 +35,7 @@ async function useData() {
     }
     else {
       window.sessionStorage.setItem("answers", JSON.stringify(answered))
-      window.location.href = "/index.html"
+      window.location.href = "/result.html"
     }
   })
 
