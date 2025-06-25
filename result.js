@@ -18,7 +18,7 @@ function statusBar(correct, total){
 function messageBar(score){
 
     if (score >= 100){
-        document.querySelector("div#message").innerHTML = "Congraduation!!!";
+        document.querySelector("div#message").innerHTML = "Congratulation!!!";
     }else if (score > 90){
         document.querySelector("div#message").innerHTML = "So Close to a Perfect Grade!";
     }else if (score > 80){
