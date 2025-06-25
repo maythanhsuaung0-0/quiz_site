@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
         count--;
       } else {
         clearInterval(countdown);
+        // change location depends on the link
+        // using # example: quiz.html#html, quiz.html#javascript
         window.location.href = "quiz.html";
       }
     }, 1000);
