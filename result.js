@@ -10,6 +10,7 @@ function statusBar(correct, total){
     let correctPercentage = Math.floor((correct/total)*100);
     document.documentElement.style.setProperty("--status-bar", `${correctPercentage}%`);
     document.querySelector("div#statusBar div").innerHTML= `${correctPercentage}%`;
+    document.querySelector("#scoreDisplay").innerHTML= `${correctPercentage}%`;
 
     messageBar(correctPercentage)
 }
@@ -54,6 +55,13 @@ function totalIncorrectAns(){
 
     return totalIncorrect;
 }
+
+var number_of_correct = totalCorrectAns().length;
+var number_of_incorrect = totalIncorrectAns().length;
+//var result_display = Math.floor((totalCorrectAns().length/total)*100);
+
+document.querySelector("#correctDisplay").insertAdjacentHTML("beforeend", number_of_correct);
+document.querySelector("#incorrectDisplay").insertAdjacentHTML("beforeend", number_of_incorrect);
 
 totalIncorrectAns().forEach(e => {
 
