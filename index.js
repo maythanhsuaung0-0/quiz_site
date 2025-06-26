@@ -7,7 +7,7 @@ let cards = [{
 },
 {
    "id":2,
-   "title":'python',
+   "title":'Python',
    "description":'Challenge yourself with javascript',
    "questions":"📄 20 questions",
    "link":'quiz.html#python'
