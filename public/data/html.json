@@ -1,0 +1,130 @@
+{
+  "html": [
+    {
+      "id": 1,
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "choices": ["<a>", "<link>", "<href>", "<url>"],
+      "answer": "<a>"
+    },
+    {
+      "id": 2,
+      "question": "Which attribute specifies the image file to display in an <img> tag?",
+      "choices": ["source", "src", "href", "file"],
+      "answer": "src"
+    },
+    {
+      "id": 3,
+      "question": "What does HTML stand for?",
+      "choices": [
+        "Hyper Text Markup Language",
+        "High-Level Text Machine Language",
+        "Hyperlinks and Text Mark Language",
+        "Home Tool Markup Language"
+      ],
+      "answer": "Hyper Text Markup Language"
+    },
+    {
+      "id": 4,
+      "question": "Which element defines the largest heading?",
+      "choices": ["<h1>", "<heading>", "<head>", "<h6>"],
+      "answer": "<h1>"
+    },
+    {
+      "id": 5,
+      "question": "Which tag is used to insert a line break?",
+      "choices": ["<br>", "<break>", "<lb>", "<newline>"],
+      "answer": "<br>"
+    },
+    {
+      "id": 6,
+      "question": "What is the correct <!DOCTYPE> declaration for HTML5?",
+      "choices": ["<!DOCTYPE html>", "<!DOCTYPE HTML5>", "<html5>", "<doctype html5>"],
+      "answer": "<!DOCTYPE html>"
+    },
+    {
+      "id": 7,
+      "question": "Which HTML attribute is used to define inline styles?",
+      "choices": ["style", "css", "styles", "font"],
+      "answer": "style"
+    },
+    {
+      "id": 8,
+      "question": "Which tag is used to define a table row?",
+      "choices": ["<tr>", "<td>", "<th>", "<row>"],
+      "answer": "<tr>"
+    },
+    {
+      "id": 9,
+      "question": "Which HTML tag is self-closing in HTML5?",
+      "choices": ["<img>", "<div>", "<p>", "<section>"],
+      "answer": "<img>"
+    },
+    {
+      "id": 10,
+      "question": "Which element represents a logical section of a document grouped by theme?",
+      "choices": ["<section>", "<div>", "<span>", "<article>"],
+      "answer": "<section>"
+    },
+    {
+      "id": 11,
+      "question": "Which HTML tag is used to embed JavaScript code in a page?",
+      "choices": ["<script>", "<js>", "<javascript>", "<code>"],
+      "answer": "<script>"
+    },
+    {
+      "id": 12,
+      "question": "Which tag specifies a footer for a document or section?",
+      "choices": ["<footer>", "<bottom>", "<foot>", "<end>"],
+      "answer": "<footer>"
+    },
+    {
+      "id": 13,
+      "question": "Which attribute on an <input> element makes it mandatory before form submission?",
+      "choices": ["required", "mandatory", "validate", "must"],
+      "answer": "required"
+    },
+    {
+      "id": 14,
+      "question": "Which HTML element defines emphasized text?",
+      "choices": ["<em>", "<i>", "<strong>", "<mark>"],
+      "answer": "<em>"
+    },
+    {
+      "id": 15,
+      "question": "Which tag is commonly used to group inline elements for styling?",
+      "choices": ["<span>", "<div>", "<p>", "<group>"],
+      "answer": "<span>"
+    },
+    {
+      "id": 16,
+      "question": "Which input type allows users to pick a date with a calendar interface?",
+      "choices": ["date", "datetime", "calendar", "time"],
+      "answer": "date"
+    },
+    {
+      "id": 17,
+      "question": "Which tag defines a drop-down list?",
+      "choices": ["<select>", "<list>", "<dropdown>", "<option>"],
+      "answer": "<select>"
+    },
+    {
+      "id": 18,
+      "question": "Which attribute provides alternate text for an image if it fails to load?",
+      "choices": ["alt", "title", "caption", "text"],
+      "answer": "alt"
+    },
+    {
+      "id": 19,
+      "question": "Which HTML element is used to define text of strong importance?",
+      "choices": ["<strong>", "<b>", "<important>", "<bold>"],
+      "answer": "<strong>"
+    },
+    {
+      "id": 20,
+      "question": "Which tag is used to define a navigation section containing links?",
+      "choices": ["<nav>", "<menu>", "<navigation>", "<ul>"],
+      "answer": "<nav>"
+    }
+  ]
+}
+
