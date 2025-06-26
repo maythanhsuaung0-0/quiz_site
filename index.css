@@ -1,29 +1,96 @@
-#title {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  left: 25%;
-  bottom: 50%;
-}
-.header_part2 {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  left: 45%;
-  bottom: 50%;
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #3b0ca5;
+  color: white;
 }
 
-#background-gradient {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #d1b9ff;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #5e2ebd;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
+
+.card p {
+  color: #cfc1ff;
+  font-size: 0.95rem;
+}
+
+.card-header {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  background-image: linear-gradient(white, #410b95);
-  padding-top: 100px;
-  height: 1700px
+  gap: 10px;
 }
-#header_input {
-  font-size: 10em;
+
+
+
+.meta {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #e0d4ff;
 }
+
+.start-btn,.startQuizButton1 {
+  background-color: #865cff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.start-btn:hover {
+  background-color: #a77eff;
+}
+
 .button {
   padding: 25px;
   font-weight: bold;

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Get the elements
   const modal = document.getElementById("quizModal");
-  const startBtn = document.getElementById("startQuizButton");
+  const startBtn = document.getElementById("startQuizButton1");
   const confirmBtn = document.getElementById("confirmQuiz");
   const cancelBtn = document.getElementById("cancelQuiz");
 
@@ -34,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function() {
         count--;
       } else {
         clearInterval(countdown);
-        // change location depends on the link
-        // using # example: quiz.html#html, quiz.html#javascript
         window.location.href = "quiz.html";
       }
     }, 1000);
