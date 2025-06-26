@@ -71,12 +71,36 @@ totalIncorrectAns().forEach(e => {
 
     let answer = e.answer;
 
-    let addin = `<div class="wrongBoard"><div class="question">${question}</div><div class="selected">Your Answer: ${selected}</div><div class="answers">Correct Answer: ${answer}</div></div>`
+    let questionNumber = e.id;
+
+    let addin = `<div class="wrongBoard">
+                    <div class="question">
+                        <span class="questionNumber">Q${questionNumber}</span>
+                        ${question}
+                    </div>
+                    <div class="resultBoard">
+                        <span class="selected">
+                            <p>
+                                <img src="images/incorrect_icon.png" width="25px" height="25px" />
+                                Your Answer:
+                            </p>
+                            <p>${selected}</p>
+                        </span>
+                        <span class="answers">
+                            <p>
+                                <img src="images/correct_icon.png" width="25px" height="25px" />
+                                Correct Answer: 
+                            </p>
+                            <p>${answer}</p>
+                        </span>
+                    </div>
+                </div>`
 
     document.querySelector("#incorrect").insertAdjacentHTML("beforeend", addin);
 
 })
 
+/*
 totalCorrectAns().forEach(e => {
 
     let question = e.question;
@@ -86,6 +110,6 @@ totalCorrectAns().forEach(e => {
 
     document.querySelector("#correct").insertAdjacentHTML("beforeend", addin);
 
-})
+}*/
 
 statusBar(totalCorrectAns().length,answers.length);
