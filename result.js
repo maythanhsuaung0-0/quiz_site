@@ -63,6 +63,10 @@ var number_of_incorrect = totalIncorrectAns().length;
 document.querySelector("#correctDisplay").insertAdjacentHTML("beforeend", number_of_correct);
 document.querySelector("#incorrectDisplay").insertAdjacentHTML("beforeend", number_of_incorrect);
 
+if (number_of_incorrect > 0){
+    document.querySelector("h2").innerHTML = "Question You Got Wrong";
+};
+
 totalIncorrectAns().forEach(e => {
 
     let question = e.question;

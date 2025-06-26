@@ -73,6 +73,7 @@ body {
   text-decoration: none;
   border: 5px solid rgb(55, 2, 134);
   color: white;
+  margin-bottom: 50px;
 }
 
 #homePage:hover {
