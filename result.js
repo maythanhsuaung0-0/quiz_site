@@ -67,7 +67,7 @@ function totalIncorrectAns(){
 //Display all the wrong answer and their correct choice.
 
 if (number_of_incorrect > 0){
-    document.querySelector("h2").innerHTML = "Question You Got Wrong";
+    document.querySelector("h2").innerHTML = `Question You Got Wrong (${number_of_incorrect})`;
 };
 
 totalIncorrectAns().forEach(e => {
