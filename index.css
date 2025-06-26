@@ -73,7 +73,7 @@ body {
   color: #e0d4ff;
 }
 
-.start-btn,.startQuizButton1 {
+.start-quiz-btn {
   background-color: #865cff;
   border: none;
   border-radius: 8px;

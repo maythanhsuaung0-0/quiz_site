@@ -1,32 +1,86 @@
+let cards = [{
+   "id":1,
+   "title":'Javascript',
+   "description":'Challenge yourself with javascript',
+   "questions":"📄 20 questions",
+   "link":'quiz.html#javascript'
+},
+{
+   "id":2,
+   "title":'Python',
+   "description":'Challenge yourself with javascript',
+   "questions":"📄 20 questions",
+   "link":'quiz.html#python'
+},{
+   "id":3,
+   "title":'CSS',
+   "description":'Challenge yourself with javascript',
+   "questions":"📄 20 questions",
+   "link":'quiz.html#css'
+},{
+   "id":4,
+   "title":'HTML',
+   "description":'Challenge yourself with javascript',
+   "questions":"📄 20 questions",
+   "link":'quiz.html#html'
+}
+]
+
+
 document.addEventListener('DOMContentLoaded', function() {
-  // Get the elements
   const modal = document.getElementById("quizModal");
-  const startBtn = document.getElementById("startQuizButton1");
+  const startButtons = document.querySelectorAll(".start-quiz-btn"); // All buttons
   const confirmBtn = document.getElementById("confirmQuiz");
   const cancelBtn = document.getElementById("cancelQuiz");
+  const cardsContainer = document.querySelector(".cards")
 
-  // Once the Start Quiz button is clicked
-  startBtn.addEventListener("click", function(e) {
-    e.preventDefault();
-    modal.style.display = "block";
+  // Loop through all start buttons and add click listener
+  startButtons.forEach(function(btn) {
+    btn.addEventListener("click", function(e) {
+      e.preventDefault();
+      
+    });
   });
+  console.log(cardsContainer)
+  console.log(cards[0])
+// generate cards
+cards.map((e)=>{
+   let cardDiv = document.createElement("div");
+   cardDiv.classList.add("card")
+   let h3 = document.createElement("h3")
+   cardDiv.appendChild(h3)
+   h3.textContent = e.title
+   let Questions = document.createElement("p");
+  Questions.textContent = e.questions
+  cardDiv.appendChild(Questions)
+   let description = document.createElement("p");
+   description.textContent = e.description;
+   cardDiv.appendChild(description);
+  
 
-  // When Confirm is clicked - start countdown
+   let btn = document.createElement("button")
+   btn.classList.add("start-quiz-btn")
+   btn.textContent = 'Start quiz'
+   btn.addEventListener('click',function(){
+    console.log('clicked')
+    modal.style.display = "block";
+    modalStart(e.link)
+   })
+   cardDiv.appendChild(btn)
+  cardsContainer.appendChild(cardDiv)
+})
+function modalStart(link){
   confirmBtn.addEventListener("click", function() {
-    // Disable buttons during countdown
     confirmBtn.disabled = true;
     cancelBtn.disabled = true;
-    
-    // Create countdown element
+
     const countdownEl = document.createElement("div");
     countdownEl.className = "countdown-text";
     countdownEl.textContent = "Starting in 3...";
-    
-    // Insert after buttons
+
     const buttonsContainer = document.querySelector(".modal-buttons");
     buttonsContainer.appendChild(countdownEl);
-    
-    // Start countdown
+
     let count = 2;
     const countdown = setInterval(() => {
       if (count > 0) {
@@ -34,17 +88,15 @@ document.addEventListener('DOMContentLoaded', function() {
         count--;
       } else {
         clearInterval(countdown);
-        window.location.href = "quiz.html";
+        window.location.href = link;
       }
     }, 1000);
   });
 
-  // Cancel button
   cancelBtn.addEventListener("click", function() {
     modal.style.display = "none";
   });
-
-  // Close when clicking outside
+}
   window.addEventListener("click", function(event) {
     if (event.target === modal) {
       modal.style.display = "none";

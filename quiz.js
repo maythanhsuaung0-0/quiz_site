@@ -18,7 +18,7 @@ async function fetchData(quizType) {
     await fetch("./public/data/javascript.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
   }
   else if (quizType === 'python') {
-   console.log('fetch from pt')
+
     await fetch("./public/data/python.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
   }
   else {
