@@ -1,8 +1,13 @@
-
-//Reveal the correct answer.
 let answers = JSON.parse(sessionStorage.getItem("answers"))
 
-console.log(answers)
+var number_of_correct = totalCorrectAns().length;
+var number_of_incorrect = totalIncorrectAns().length;
+
+//Display the number of correct and incorrect answer
+document.querySelector("#correctDisplay").insertAdjacentHTML("beforeend", number_of_correct);
+document.querySelector("#incorrectDisplay").insertAdjacentHTML("beforeend", number_of_incorrect);
+
+//console.log(answers)
 
 //Change the status bar in the result page.
 
@@ -56,12 +61,10 @@ function totalIncorrectAns(){
     return totalIncorrect;
 }
 
-var number_of_correct = totalCorrectAns().length;
-var number_of_incorrect = totalIncorrectAns().length;
-//var result_display = Math.floor((totalCorrectAns().length/total)*100);
 
-document.querySelector("#correctDisplay").insertAdjacentHTML("beforeend", number_of_correct);
-document.querySelector("#incorrectDisplay").insertAdjacentHTML("beforeend", number_of_incorrect);
+
+
+//Display all the wrong answer and their correct choice.
 
 if (number_of_incorrect > 0){
     document.querySelector("h2").innerHTML = "Question You Got Wrong";
@@ -77,11 +80,17 @@ totalIncorrectAns().forEach(e => {
 
     let questionNumber = e.id;
 
-    
+    //Creating the Display Board for the Incorrect Answers
+        /*
+            Creating all the tags used in this DisplayBoard
+            Assigning their respected class
+        */
     var wrongBoard = document.createElement("div");
     wrongBoard.classList.add("wrongBoard");
+
     var questionBar = document.createElement("div");
     questionBar.classList.add("question");
+
     var questionNumbers = document.createElement("span");
     questionNumbers.classList.add("questionNumber");
 
@@ -90,21 +99,33 @@ totalIncorrectAns().forEach(e => {
 
     var selectedBar = document.createElement("span");
     selectedBar.classList.add("selected");
+
     var incorrect_icon = document.createElement("img");
     incorrect_icon.setAttribute("src", "images/incorrect_icon.png");
     incorrect_icon.setAttribute("width", "25px")
     incorrect_icon.setAttribute("height", "25px")
+
     var incorrect_icon_bar = document.createElement("p");
     var incorrectAns = document.createElement("p");
 
     var ansBar = document.createElement("span");
     ansBar.classList.add("answers");
+
     var correct_icon = document.createElement("img");
     correct_icon.setAttribute("src", "images/correct_icon.png");
     correct_icon.setAttribute("width", "25px");
     correct_icon.setAttribute("height", "25px");
+
     var correct_icon_bar = document.createElement("p");
+
     var correctAns = document.createElement("p");
+
+        //Finish Creating all the tags in the Display Board
+
+        /*
+            Beginning to Arrange the Tags in the Bisplay Board
+            As well as inputing their values and sentence.
+        */
 
     wrongBoard.appendChild(questionBar);
     wrongBoard.appendChild(resultBoard);
@@ -125,21 +146,13 @@ totalIncorrectAns().forEach(e => {
     correct_icon_bar.append(correct_icon, " Correct Answer:");
     correctAns.textContent = `${answer}`;
 
+        //Finish with placing all the tags
+
+    //Displaying the Display Board on the Webpage
     document.querySelector("#incorrect").appendChild(wrongBoard);
+    
+        
 
 })
-    
-
-/*
-totalCorrectAns().forEach(e => {
-
-    let question = e.question;
-    let answer = e.answer;
-
-    let addin = `<div class="answerBoard"><div class="question">${question}</div><div class="answers">${answer}</div></div>`
-
-    document.querySelector("#correct").insertAdjacentHTML("beforeend", addin);
-
-}*/
 
 statusBar(totalCorrectAns().length,answers.length);
