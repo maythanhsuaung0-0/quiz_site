@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>20 Question Answer Page</title>
-        <link rel="stylesheet" href="result.css">
-    </head>
-    <body>
-        <h1>JavaScript 20 Question Answer Page</h1>
+  <head>
+    <title>20 Question Answer Page</title>
+    <link rel="stylesheet" href="result.css" />
+  </head>
+  <body>
+    <a id="homePage" href="index.html">Homepage Page</a>
+    <div id="main">
+      <h1>JavaScript 20 Question Quiz Result</h1>
 
-
-        <div id="statusBar">
-            <div id="status"></div>
+      <div id="statusBar">
+        <div id="status"></div>
+      </div>
+      <div id="scoreBar">
+        <div class="box">
+          <img src="images/correct_icon.png" width="50px" height="50px" />
+          <div id="correctDisplay"></div>
+          <p>Correct</p>
         </div>
-        <div id="message"></div>
-        <br/>
-        <!--Display the correct answer!-->
-        <div id="ansDisplay">
-            <div id="incorrect"></div>
-            <div id="correct"></div>
+        <div class="box">
+          <img src="images/incorrect_icon.png" width="50px" height="50px" />
+          <div id="incorrectDisplay"></div>
+          <p>Incorrect</p>
         </div>
-
-        <a id="homePage" href="index.html">Homepage Page</a>
-    </body>
-    <footer>
-        <script src="function.js"></script>
-        <script src="result.js"></script>
-    </footer>
+        <div class="box">
+          <img src="images/percentage_icon.png" width="50px" height="50px" />
+          <div id="scoreDisplay"></div>
+          <p>Score</p>
+        </div>
+      </div>
+      <div id="message"></div>
+      <br />
+      <!--Display the incorrect answer!-->
+      <h2 class="subheader"></h2>
+      <div id="ansDisplay">
+        <div id="incorrect"></div>
+        <!--<div id="correct"></div>-->
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script src="function.js"></script>
+    <script src="result.js"></script>
+  </footer>
 </html>
