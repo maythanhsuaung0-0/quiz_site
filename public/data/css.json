@@ -1,150 +1,126 @@
-  {
+{
   "css": [
     {
       "id": 1,
       "question": "What does CSS stand for?",
-      "choices": [
-        "Cascading Style Sheets",
-        "Colorful Style Syntax",
-        "Computer Style System",
-        "Creative Style Sheets"
-      ],
+      "choices": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Syntax", "Colorful Style Structure"],
       "answer": "Cascading Style Sheets"
     },
     {
       "id": 2,
-      "question": "Which symbol is used to select an ID in CSS?",
-      "choices": ["#", ".", "*", "@"],
-      "answer": "#"
-    },
-    {
-      "id": 3,
-      "question": "Which property is used to change the text color of an element?",
-      "choices": ["color", "text-color", "font-color", "foreground"],
+      "question": "Which property controls the text color of an element?",
+      "choices": ["font-color", "color", "text-color", "foreground"],
       "answer": "color"
     },
     {
+      "id": 3,
+      "question": "How do you apply styles to an element with ID 'main'?",
+      "choices": ["#main", ".main", "main", "*main"],
+      "answer": "#main"
+    },
+    {
       "id": 4,
-      "question": "How do you apply a class selector in CSS?",
-      "choices": [".classname", "#classname", "@classname", "*classname"],
-      "answer": ".classname"
+      "question": "Which symbol is used to select a class in CSS?",
+      "choices": ["@", ".", "#", "$"],
+      "answer": "."
     },
     {
       "id": 5,
-      "question": "Which CSS property controls the text size?",
-      "choices": ["font-size", "text-style", "font-weight", "text-size"],
-      "answer": "font-size"
-    },
-    {
-      "id": 6,
-      "question": "Which CSS property is used to change the background color?",
-      "choices": ["background-color", "bgcolor", "color", "background"],
+      "question": "Which CSS property is used to set the background color?",
+      "choices": ["bgcolor", "background", "background-color", "color"],
       "answer": "background-color"
     },
     {
+      "id": 6,
+      "question": "How do you make text bold in CSS?",
+      "choices": ["font-weight: bold;", "style: bold;", "text-style: bold;", "font: bold;"],
+      "answer": "font-weight: bold;"
+    },
+    {
       "id": 7,
-      "question": "What is the correct syntax to make all <p> elements bold?",
-      "choices": [
-        "p { font-weight: bold; }",
-        "p { text-style: bold; }",
-        "p { style: bold; }",
-        "p: bold;"
-      ],
-      "answer": "p { font-weight: bold; }"
+      "question": "Which property is used to change the font size?",
+      "choices": ["text-size", "font-style", "font-size", "text-style"],
+      "answer": "font-size"
     },
     {
       "id": 8,
-      "question": "Which property adds space inside an element’s border?",
-      "choices": ["padding", "margin", "border", "spacing"],
-      "answer": "padding"
+      "question": "What does the 'z-index' property control?",
+      "choices": ["Layer order", "Zoom level", "Text indentation", "Element height"],
+      "answer": "Layer order"
     },
     {
       "id": 9,
-      "question": "Which CSS property controls the space outside an element?",
-      "choices": ["margin", "padding", "border-spacing", "outline"],
-      "answer": "margin"
+      "question": "How do you make an element take the full width of its container?",
+      "choices": ["width: full;", "width: 100%;", "display: block;", "full-width: true;"],
+      "answer": "width: 100%;"
     },
     {
       "id": 10,
-      "question": "How do you select all <a> elements inside a <div>?",
-      "choices": ["div a", "div.a", "div > a", "#div a"],
-      "answer": "div a"
+      "question": "Which property controls the space inside an element's border?",
+      "choices": ["margin", "border", "spacing", "padding"],
+      "answer": "padding"
     },
     {
       "id": 11,
-      "question": "Which property is used to make text italic?",
-      "choices": ["font-style", "text-italic", "font-weight", "style"],
-      "answer": "font-style"
+      "question": "Which property adds space outside the element?",
+      "choices": ["padding", "margin", "border-spacing", "outline"],
+      "answer": "margin"
     },
     {
       "id": 12,
-      "question": "Which CSS property changes the cursor when hovering?",
-      "choices": ["cursor", "hover", "pointer", "mouse-style"],
-      "answer": "cursor"
-    },
-    {
-      "id": 13,
-      "question": "Which value of `position` allows an element to stay fixed in place?",
-      "choices": ["fixed", "absolute", "sticky", "relative"],
-      "answer": "fixed"
-    },
-    {
-      "id": 14,
-      "question": "What does `z-index` control?",
-      "choices": [
-        "Stacking order of elements",
-        "Font size",
-        "Element opacity",
-        "Scroll position"
-      ],
-      "answer": "Stacking order of elements"
-    },
-    {
-      "id": 15,
-      "question": "Which property is used to make elements responsive in width?",
-      "choices": ["max-width", "fixed-width", "resize", "scale"],
-      "answer": "max-width"
-    },
-    {
-      "id": 16,
-      "question": "Which unit is relative to the font size of the root element?",
-      "choices": ["rem", "em", "px", "%"],
+      "question": "What unit is relative to the root font size?",
+      "choices": ["px", "em", "%", "rem"],
       "answer": "rem"
     },
     {
-      "id": 17,
-      "question": "What does the `display: flex;` declaration do?",
-      "choices": [
-        "Creates a flexible box layout",
-        "Makes an element invisible",
-        "Centers the page content",
-        "Floats elements to the left"
-      ],
-      "answer": "Creates a flexible box layout"
+      "id": 13,
+      "question": "Which CSS value makes an element disappear but still take up space?",
+      "choices": ["hidden", "display: none;", "opacity: 0;", "visibility: hidden;"],
+      "answer": "visibility: hidden;"
     },
     {
-      "id": 18,
-      "question": "How do you apply a style to all elements on a page?",
-      "choices": ["* { ... }", "body { ... }", "#all { ... }", "html { ... }"],
+      "id": 14,
+      "question": "Which CSS property makes a box a flex container?",
+      "choices": ["display: flex;", "flex: container;", "position: flex;", "box-type: flex;"],
+      "answer": "display: flex;"
+    },
+    {
+      "id": 15,
+      "question": "How do you select all `<p>` elements inside a `<div>`?",
+      "choices": ["div > p", "#div p", "div p", ".div > p"],
+      "answer": "div p"
+    },
+    {
+      "id": 16,
+      "question": "Which CSS rule applies styles to all elements on a page?",
+      "choices": ["body { ... }", "#all { ... }", "* { ... }", "html { ... }"],
       "answer": "* { ... }"
     },
     {
+      "id": 17,
+      "question": "Which value of `position` keeps an element in place during scroll?",
+      "choices": ["absolute", "sticky", "relative", "fixed"],
+      "answer": "fixed"
+    },
+    {
+      "id": 18,
+      "question": "Which CSS property controls the mouse cursor on hover?",
+      "choices": ["pointer", "hover", "cursor", "mouse-style"],
+      "answer": "cursor"
+    },
+    {
       "id": 19,
-      "question": "Which property is used to add shadow to text?",
-      "choices": ["text-shadow", "shadow-text", "font-shadow", "box-shadow"],
-      "answer": "text-shadow"
+      "question": "What is the correct media query for devices with max width 768px?",
+      "choices": ["@media (max: 768px)", "@media screen-width 768", "@query max 768", "@media (max-width: 768px)"],
+      "answer": "@media (max-width: 768px)"
     },
     {
       "id": 20,
-      "question": "Which media query is used to apply styles on devices with a max width of 768px?",
-      "choices": [
-        "@media (max-width: 768px)",
-        "@screen 768px",
-        "@query max 768px",
-        "@media screen-width 768"
-      ],
-      "answer": "@media (max-width: 768px)"
+      "question": "Which property is used to add a shadow to text?",
+      "choices": ["font-shadow", "box-shadow", "shadow-text", "text-shadow"],
+      "answer": "text-shadow"
     }
   ]
 }
- 
+
+

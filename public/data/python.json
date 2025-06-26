@@ -1,125 +1,126 @@
- {
+{
   "python": [
     {
       "id": 1,
       "question": "Which keyword is used to define a function in Python?",
-      "choices": ["def", "function", "func", "define"],
+      "choices": ["define", "func", "def", "function"],
       "answer": "def"
     },
     {
       "id": 2,
-      "question": "What is the output of `print(2 ** 3)`?",
-      "choices": ["8", "6", "9", "5"],
-      "answer": "8"
+      "question": "What data type is the result of `input()` by default?",
+      "choices": ["string", "int", "bool", "float"],
+      "answer": "string"
     },
     {
       "id": 3,
-      "question": "Which data type is used to store a sequence of characters?",
-      "choices": ["str", "int", "list", "char"],
-      "answer": "str"
+      "question": "What is the output of `len([1, 2, 3])`?",
+      "choices": ["3", "2", "None", "Error"],
+      "answer": "3"
     },
     {
       "id": 4,
-      "question": "How do you insert a comment in Python?",
-      "choices": ["# comment", "// comment", "<!-- comment -->", "/* comment */"],
-      "answer": "# comment"
+      "question": "Which of the following is used to create a list?",
+      "choices": ["{}", "[]", "()", "<>"],
+      "answer": "[]"
     },
     {
       "id": 5,
-      "question": "What is the correct file extension for Python files?",
-      "choices": [".py", ".pt", ".pyt", ".python"],
-      "answer": ".py"
+      "question": "How do you start a comment in Python?",
+      "choices": ["//", "--", "#", "/*"],
+      "answer": "#"
     },
     {
       "id": 6,
-      "question": "Which function is used to get input from the user?",
-      "choices": ["input()", "read()", "scanf()", "get()"],
-      "answer": "input()"
+      "question": "Which operator is used for exponentiation?",
+      "choices": ["^", "**", "//", "^^"],
+      "answer": "**"
     },
     {
       "id": 7,
-      "question": "Which keyword is used for loops in Python?",
-      "choices": ["for", "loop", "iterate", "repeat"],
-      "answer": "for"
+      "question": "What is the output of `type(10)`?",
+      "choices": ["<class 'float'>", "<class 'str'>", "<class 'int'>", "<class 'bool'>"],
+      "answer": "<class 'int'>"
     },
     {
       "id": 8,
-      "question": "How do you create a list in Python?",
-      "choices": ["[1, 2, 3]", "{1, 2, 3}", "(1, 2, 3)", "<1, 2, 3>"],
-      "answer": "[1, 2, 3]"
+      "question": "How do you import a module in Python?",
+      "choices": ["require module", "import module", "#include module", "use module"],
+      "answer": "import module"
     },
     {
       "id": 9,
-      "question": "Which operator is used for checking equality?",
-      "choices": ["==", "=", "!=", "==="],
-      "answer": "=="
+      "question": "What keyword is used for loops that repeat a known number of times?",
+      "choices": ["repeat", "while", "loop", "for"],
+      "answer": "for"
     },
     {
       "id": 10,
-      "question": "Which keyword is used to handle exceptions?",
-      "choices": ["try", "catch", "throw", "except"],
-      "answer": "try"
+      "question": "What does the `break` statement do?",
+      "choices": ["Skips current iteration", "Exits loop", "Pauses loop", "Restarts loop"],
+      "answer": "Exits loop"
     },
     {
       "id": 11,
-      "question": "What is the output of `len('Python')`?",
-      "choices": ["6", "7", "5", "8"],
-      "answer": "6"
+      "question": "Which symbol is used for indentation in Python?",
+      "choices": ["Tab or spaces", "{}", ":", "Indent;"],
+      "answer": "Tab or spaces"
     },
     {
       "id": 12,
-      "question": "Which of the following is a tuple?",
-      "choices": ["(1, 2, 3)", "[1, 2, 3]", "{1, 2, 3}", "<1, 2, 3>"],
-      "answer": "(1, 2, 3)"
+      "question": "What is the correct file extension for Python files?",
+      "choices": [".py", ".python", ".pt", ".pyth"],
+      "answer": ".py"
     },
     {
       "id": 13,
-      "question": "Which function converts a string to an integer?",
-      "choices": ["int()", "str()", "float()", "bool()"],
-      "answer": "int()"
+      "question": "Which keyword is used to define a class in Python?",
+      "choices": ["class", "Class", "define", "object"],
+      "answer": "class"
     },
     {
       "id": 14,
-      "question": "How do you start a conditional block?",
-      "choices": ["if", "when", "select", "choose"],
-      "answer": "if"
+      "question": "How do you handle exceptions in Python?",
+      "choices": ["try/catch", "try/except", "catch/except", "error handling"],
+      "answer": "try/except"
     },
     {
       "id": 15,
-      "question": "Which keyword is used to exit a loop early?",
-      "choices": ["break", "exit", "stop", "return"],
-      "answer": "break"
+      "question": "What does `range(5)` return?",
+      "choices": ["[1, 2, 3, 4, 5]", "[0, 1, 2, 3, 4]", "0 to 5", "[5]"],
+      "answer": "[0, 1, 2, 3, 4]"
     },
     {
       "id": 16,
-      "question": "What is the correct way to define a class in Python?",
-      "choices": ["class MyClass:", "MyClass():", "define class MyClass:", "function MyClass()"],
-      "answer": "class MyClass:"
+      "question": "How do you create a dictionary in Python?",
+      "choices": ["[]", "()", "{}", "<>"],
+      "answer": "{}"
     },
     {
       "id": 17,
-      "question": "What will `type([])` return?",
-      "choices": ["<class 'list'>", "<list>", "list", "<type 'list'>"],
-      "answer": "<class 'list'>"
+      "question": "Which method adds an item to a list?",
+      "choices": ["add()", "push()", "append()", "insert()"],
+      "answer": "append()"
     },
     {
       "id": 18,
-      "question": "Which keyword is used to create an object from a class?",
-      "choices": ["new", "init", "self", "none of these"],
-      "answer": "none of these"
+      "question": "What will `bool([])` return?",
+      "choices": ["True", "False", "Error", "None"],
+      "answer": "False"
     },
     {
       "id": 19,
-      "question": "Which built-in keyword is used to define anonymous functions?",
-      "choices": ["lambda", "anon", "def", "func"],
-      "answer": "lambda"
+      "question": "Which operator is used to check equality?",
+      "choices": ["!=", "==", "=", "==="],
+      "answer": "=="
     },
     {
       "id": 20,
-      "question": "What is the output of `bool('False')`?",
-      "choices": ["True", "False", "None", "Error"],
+      "question": "Which of these is a valid Boolean value in Python?",
+      "choices": ["TRUE", "true", "True", "yes"],
       "answer": "True"
     }
   ]
 }
+
 
