@@ -41,6 +41,7 @@ h2.subheader {
 
 #statusBar {
   background-color: beige;
+  background-image: linear-gradient(rgb(0,0,0,0.5), beige, rgb(0,0,0,0.5));
   width: 1000px;
   height: 40px;
   border-radius: 20px;
@@ -49,6 +50,7 @@ h2.subheader {
 }
 #status {
   background-color: #F9CC14;
+  background-image: linear-gradient(#F9CC14, rgb(231, 173, 1), #F9CC14);
   width: 0%;
   height: 40px;
   border-radius: 20px;
