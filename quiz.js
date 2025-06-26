@@ -11,13 +11,13 @@ let index = 0
 let isAnswered = false
 async function fetchData(quizType) {
   let data;
-  if (quizType == 'html') {
+  if (quizType === 'html') {
     await fetch("./public/data/html.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
   }
-  else if (quizType == 'javascript') {
+  else if (quizType === 'javascript') {
     await fetch("./public/data/javascript.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
   }
-  else if (quizType == 'python') {
+  else if (quizType === 'python') {
 
     await fetch("./public/data/python.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
   }
