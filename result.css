@@ -11,7 +11,7 @@
 
 body {
   background-color: var(--theme-color);
-  background-image: linear-gradient(rgb(72, 6, 170), #410b95);
+  background-image: linear-gradient(#3b0ca5, #410b95);
   color: white;
   padding-top: 50px;
   padding-bottom: 100px;

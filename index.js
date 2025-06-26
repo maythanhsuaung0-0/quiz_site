@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Get the elements
   const modal = document.getElementById("quizModal");
-  const startBtn = document.getElementById("startQuizButton");
+  const startBtn = document.getElementById("startQuizButton1");
   const confirmBtn = document.getElementById("confirmQuiz");
   const cancelBtn = document.getElementById("cancelQuiz");
 

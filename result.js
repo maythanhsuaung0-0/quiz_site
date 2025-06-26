@@ -77,32 +77,58 @@ totalIncorrectAns().forEach(e => {
 
     let questionNumber = e.id;
 
-    let addin = `<div class="wrongBoard">
-                    <div class="question">
-                        <span class="questionNumber">Q${questionNumber}</span>
-                        ${question}
-                    </div>
-                    <div class="resultBoard">
-                        <span class="selected">
-                            <p>
-                                <img src="images/incorrect_icon.png" width="25px" height="25px" />
-                                Your Answer:
-                            </p>
-                            <p>${selected}</p>
-                        </span>
-                        <span class="answers">
-                            <p>
-                                <img src="images/correct_icon.png" width="25px" height="25px" />
-                                Correct Answer: 
-                            </p>
-                            <p>${answer}</p>
-                        </span>
-                    </div>
-                </div>`
+    
+    var wrongBoard = document.createElement("div");
+    wrongBoard.classList.add("wrongBoard");
+    var questionBar = document.createElement("div");
+    questionBar.classList.add("question");
+    var questionNumbers = document.createElement("span");
+    questionNumbers.classList.add("questionNumber");
 
-    document.querySelector("#incorrect").insertAdjacentHTML("beforeend", addin);
+    var resultBoard = document.createElement("div");
+    resultBoard.classList.add("resultBoard");
+
+    var selectedBar = document.createElement("span");
+    selectedBar.classList.add("selected");
+    var incorrect_icon = document.createElement("img");
+    incorrect_icon.setAttribute("src", "images/incorrect_icon.png");
+    incorrect_icon.setAttribute("width", "25px")
+    incorrect_icon.setAttribute("height", "25px")
+    var incorrect_icon_bar = document.createElement("p");
+    var incorrectAns = document.createElement("p");
+
+    var ansBar = document.createElement("span");
+    ansBar.classList.add("answers");
+    var correct_icon = document.createElement("img");
+    correct_icon.setAttribute("src", "images/correct_icon.png");
+    correct_icon.setAttribute("width", "25px");
+    correct_icon.setAttribute("height", "25px");
+    var correct_icon_bar = document.createElement("p");
+    var correctAns = document.createElement("p");
+
+    wrongBoard.appendChild(questionBar);
+    wrongBoard.appendChild(resultBoard);
+
+    questionBar.appendChild(questionNumbers);
+    questionNumbers.textContent = `Q${questionNumber}`;
+    questionBar.append(`${question}`);
+
+    resultBoard.appendChild(selectedBar);
+    selectedBar.appendChild(incorrect_icon_bar);
+    selectedBar.appendChild(incorrectAns);
+    incorrect_icon_bar.append(incorrect_icon, " Your Answer:");
+    incorrectAns.textContent = `${selected}`;
+
+    resultBoard.appendChild(ansBar);
+    ansBar.appendChild(correct_icon_bar);
+    ansBar.appendChild(correctAns);
+    correct_icon_bar.append(correct_icon, " Correct Answer:");
+    correctAns.textContent = `${answer}`;
+
+    document.querySelector("#incorrect").appendChild(wrongBoard);
 
 })
+    
 
 /*
 totalCorrectAns().forEach(e => {

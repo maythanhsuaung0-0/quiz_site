@@ -1,7 +1,7 @@
 let choices_list = document.querySelector(".questions-list")
 let track = document.querySelector(".track")
 let container = document.querySelector(".transparent-card")
-let question = document.querySelector(".question-card h3")
+let question = document.querySelector("#questionCard h3")
 let button = document.querySelector(".next")
 let submitButton = document.querySelector(".submit")
 let prevButton = document.querySelector(".prev")
@@ -9,34 +9,66 @@ let back = document.querySelector(".back")
 let answered = []
 let index = 0
 let isAnswered = false
-async function fetchData() {
+async function fetchData(quizType) {
   let data;
-  await fetch("./public/data/data.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
+  if (quizType == 'html') {
+    await fetch("./public/data/html.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
+  }
+  else if (quizType == 'javascript') {
+    await fetch("./public/data/javascript.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
+  }
+  else if (quizType == 'python') {
+
+    await fetch("./public/data/python.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
+  }
+  else {
+
+    await fetch("./public/data/css.json").then((res) => res.json()).then((e) => data = e).catch((err) => console.log("fking err", err))
+  }
   return data
 
 }
 
 async function useData() {
-  let q_and_a = await fetchData()
-  let questions = q_and_a.javascript
-  console.log(q_and_a)
-  loadQuestion(question, questions, index)
-  button.addEventListener("click", function() {
-    if (index !== 20) {
-      choices_list.dataset.checked = "false"
-      loadQuestion(question, questions, index)
+  const pathname = window.location.hash.slice(1)
+  let q_and_a = await fetchData(pathname)
+  setTimeout(() => {
+    button.classList.remove("none")
+    let questions;
+    switch (pathname) {
+      case 'html':
+        questions = q_and_a.html
+        break;
+      case 'javascript':
+        questions = q_and_a.javascript
+        break;
+      case 'python':
+        questions = q_and_a.python
+        break;
 
-      if (isAnswered == false) {
-        alert("you must answered all questions")
+      default:
+        questions = q_and_a.css
+        break;
+    }
+    loadQuestion(question, questions, index)
+    button.addEventListener("click", function() {
+      if (index !== 20) {
+        choices_list.dataset.checked = "false"
+        loadQuestion(question, questions, index)
+
+        if (isAnswered == false) {
+          alert("you must answered all questions")
+        }
+        else {
+          isAnswered = false;
+        }
       }
       else {
-        isAnswered = false;
+        window.sessionStorage.setItem("answers", JSON.stringify(answered))
+        window.location.href = "/result.html"
       }
-    }
-    else {
-      window.sessionStorage.setItem("answers", JSON.stringify(answered))
-      window.location.href = "/result.html"
-    }
+
+    }, 300)
   })
 
 
@@ -54,13 +86,11 @@ function checkAnswer(q, current, self, parent) {
     parent.classList.remove("wrong")
     parent.classList.add("correct")
     ans = { ...modified_q, "selected": current, "status": "correct" }
-    console.log(ans)
   }
   else {
     parent.classList.add("wrong")
     ans = { ...modified_q, "selected": current, "status": "wrong" }
 
-    console.log(ans)
   }
   answered.push(ans)
 }
