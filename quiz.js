@@ -66,7 +66,7 @@ async function useData() {
       }
       else {
         window.sessionStorage.setItem("answers", JSON.stringify(answered))
-        window.location.href = "/result.html"
+        window.location.href = "result.html"
       }
 
     }, 300)
@@ -148,12 +148,12 @@ back.addEventListener("click", function() {
     console.log('quit', quit)
     if (quit) {
       sessionStorage.clear()
-      window.location.href = "/index.html"
+      window.location.href = "index.html"
     }
   }
   else {
     sessionStorage.clear()
-    window.location.href = "/index.html"
+    window.location.href = "index.html"
 
   }
 
